@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("compiler","cmpfun")
+importFrom("stats", "frequency", "is.mts", "is.ts", "start", "ts")
+importFrom("utils", "read.csv", "read.table", "write.csv","write.table")
+
