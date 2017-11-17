@@ -9,30 +9,41 @@ For the package to work as is intended, gretl should be
 installed systemwide. In the case of absence of a searcheable
 gretl installation on the OS, the package will be attached
 with a diagnostic message, and all package functions will
-print the diagnostics, follewed by `NULL` output. Gretl can
+print the diagnostics, followed by `NULL` output. Gretl can
 be downloaded from <http://gretl.sourceforge.net>. The minimal gretl version
-required by the current package version is 2017c.
+required by the current package version is 2016c.
 
 ##### Linux
 
-Most of mopular Linux distributions have gretl binaries at
+Most of popular Linux distributions have gretl binaries at
 official repositories, but in many cases reposes' versions
 are outdated. It is recommended to compile gretl from the
-sourses. One can download stand-alone User's guide
+sources. One can download stand-alone User's guide
 from <https://sourceforge.net/projects/gretl/files/manual/>.
 Appendix C contains instructions on installing gretl dependencies
-and on building the program.
+and on building the program.    
+
 
 ##### Mac OS X
 
-Gretl binaries can be downloaded from <http://gretl.sourceforge.net/osx.html>
+Gretl binaries can be downloaded from <http://gretl.sourceforge.net/osx.html>  
+The GUI program should have been run (main window/Tools/Gretl console:
+run, e.g. help) beforehand and
+this way a valid `~/.gretl2rc` file should be created in the user's
+home directory.   
+The default place for `gretlcli` is `/Applications/Gretl.app/Contents/Resources/bin/gretlcli`  
+Then the path should be made searchable, e.g. by running in shell  
+`export PATH=$PATH:~/Applications/Gretl.app/Contents/Resources/bin/`   
+(the path should be adjusted if the actual path of `gretl` installation is different)  
+Of course, R should be restarted after these operations.
+
 
 ##### Windows™
 
 Gretl binaries for Windows™ can be downloaded from
 <http://gretl.sourceforge.net/win32/>. During the
 installation process "**include into PATH**" option
-should be **swithed on**.
+should be **switched on**.
 
 ###### Known path issues
 The code inside the package functions uses 
@@ -91,4 +102,4 @@ function provided the relevant soft is installed on your system.
 [^1]:
 The references for gretl function packages mentioned in this text
 are : Oleh Komasko, gretl function package tobit_mfx.gfn, <http://ricardo.ecn.wfu.edu/gretl/cgi-bin/current_fnfiles/tobit_mfx.gfn>; 
-Oleh Komasko, gretl function package lagreg.zip, <http://ricardo.ecn.wfu.edu/gretl/cgi-bin/current_fnfiles/lagreg.zip>; Oleh Komasko, gretl function package a_eff.gfn, <http://ricardo.ecn.wfu.edu/gretl/cgi-bin/current_fnfiles/a_eff.gfn>. 
+Oleh Komashko, gretl function package lagreg.zip, <http://ricardo.ecn.wfu.edu/gretl/cgi-bin/current_fnfiles/lagreg.zip>; Oleh Komasko, gretl function package a_eff.gfn, <http://ricardo.ecn.wfu.edu/gretl/cgi-bin/current_fnfiles/a_eff.gfn>. 

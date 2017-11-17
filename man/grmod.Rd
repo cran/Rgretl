@@ -44,5 +44,6 @@ Oleh Komashko
 set.seed(13)
 dfr = data.frame(y = rnorm(20), x = rnorm(20))
 grmod("ols y 0 x --simple-print",dfr)
+grmod("ols diff(LRY) 0 diff(LRM)","denmark.gdt")
 }
 

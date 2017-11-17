@@ -1,8 +1,8 @@
 Package: Rgretl
 Type: Package
 Title: Interface to 'gretlcli'
-Version: 0.1.5
-Date: 2017-11-08
+Version: 0.1.6
+Date: 2017-11-17
 Author: Oleh Komashko
 Maintainer: Oleh Komashko <oleg_komashko@ukr.net>
 Depends: R (>= 3.3.1)
@@ -20,6 +20,6 @@ Description: An interface to 'GNU gretl': running 'gretl' scripts from, estimati
              using this package.
 License: GPL (>= 2)
 NeedsCompilation: no
-Packaged: 2017-11-07 22:40:28 UTC; oleh
+Packaged: 2017-11-17 15:03:31 UTC; oleh
 Repository: CRAN
-Date/Publication: 2017-11-14 13:46:30 UTC
+Date/Publication: 2017-11-17 17:24:03 UTC

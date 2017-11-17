@@ -141,7 +141,7 @@ startcode = as.numeric(read.csv(fname))
     else
     {
       #txt2 = c("set verbose off", paste("open", data, "--quiet"))
-      c("set echo off","set messages off", paste("open", data, "--quiet"))
+      txt2 <- c("set echo off","set messages off", paste("open", data, "--quiet"))
       txt2 = c(txt2, text)
     }
     hhh = 1
