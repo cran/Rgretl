@@ -1,5 +1,9 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("compiler","cmpfun")
 importFrom("stats", "frequency", "is.mts", "is.ts", "start", "ts")
-importFrom("utils", "read.csv", "read.table", "write.csv","write.table")
-
+importFrom("utils", "read.csv", "read.table", "write.csv","write.table","packageVersion")
+importFrom("lubridate","week")
+importFrom("grDevices","as.raster","devAskNewPage")
+importFrom("graphics","rasterImage", "par", "plot")
+importFrom("png","readPNG")
+importFrom("xml2", "read_xml", "as_list")
