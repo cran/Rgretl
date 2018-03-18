@@ -15,10 +15,10 @@ An interface to \emph{GNU gretl}: running \emph{gretl} scripts from \R, estimati
 \tabular{ll}{
 Package: \tab Rgretl\cr
 Type: \tab Package\cr
-Version: \tab 0.2.0\cr
-Date: \tab 2018-03-07\cr
+Version: \tab 0.2.2\cr
+Date: \tab 2018-03-17\cr
 Depends: \tab R (>= 3.4.0)\cr
-SystemRequirements: \tab gretl (>= 2016c), gretlcli\cr
+SystemRequirements: \tab gretl (>= 2017c), gretlcli\cr
 }
 
 \packageIndices{Rgretl}  

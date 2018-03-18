@@ -1,14 +1,14 @@
 Package: Rgretl
 Type: Package
 Title: Interface to 'gretlcli'
-Version: 0.2.1
-Date: 2018-03-07
+Version: 0.2.2
+Date: 2018-03-17
 Author: Oleh Komashko
 Maintainer: Oleh Komashko <oleg_komashko@ukr.net>
 Depends: R (>= 3.4.0)
 Imports: compiler, lubridate, png, xml2
 LazyData: yes
-SystemRequirements: gretl (>= 2016c), gretlcli
+SystemRequirements: gretl (>= 2017c), gretlcli
 Description: An interface to 'GNU gretl': running 'gretl' scripts from, estimating econometric
              models with backward passing of model results, opening 'gretl' data files (.gdt).
              'gretl' can be downloaded from <http://gretl.sourceforge.net>. This package could make
@@ -21,6 +21,6 @@ Description: An interface to 'GNU gretl': running 'gretl' scripts from, estimati
              using this package.
 License: GPL (>= 2)
 NeedsCompilation: no
-Packaged: 2018-03-07 00:10:28 UTC; oleh
+Packaged: 2018-03-17 11:31:12 UTC; oleh
 Repository: CRAN
-Date/Publication: 2018-03-07 04:05:46 UTC
+Date/Publication: 2018-03-18 15:24:53 UTC

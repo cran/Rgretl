@@ -149,32 +149,6 @@
 
 
 
-.get_grwd <- function ()
-{
-  path = paste0(tempdir(), .Platform$file.sep)
-  fname = paste0(path, "pkgstmsg894658426289294q8.csv")
-  startcode = as.numeric(read.csv(fname))
-  if (startcode > 0)
-  {
-    cat("\nNo valid gretl executable: no output is produced\n")
-    return(invisible(NULL))
-  }
-  str = strsplit(system("gretl -c", wait = FALSE, intern = T), " ")[[1]]
-  #print(str)
-  str = str[length(str)]
-  str2 = readLines(str)
-  #print(str2)
-  file.remove(str)
-  ..afun <-function(x)
-  {if (nchar(x) < 9) return(FALSE)
-   substr(x,1,9) == "workdir =" 
-  }
-  .afun <- Vectorize(..afun)
-  str2 = str2[.afun(str2)]
-  str2 = strsplit(str2, " = ")[[1]][2]
-  str2
-}
-
 .ts2frame <- function(x,name=NULL)
 {
   nomatr <- is.null(dim(x))
@@ -1561,7 +1535,6 @@ show_sample <- function(x)
 
 save_bin <- cmpfun(.save_bin)
 merge_data <- cmpfun(.merge_data)
-get_grwd <- cmpfun(.get_grwd)
 save_gdt <- cmpfun(.save_gdt)
 run_grcli <- cmpfun(.run_grcli)
 grmod <- cmpfun(.grmod)
